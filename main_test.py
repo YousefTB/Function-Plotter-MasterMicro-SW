@@ -79,13 +79,13 @@ def test_large_input_values(gui, qtbot):
     
 
 def test_zero_division(gui, qtbot):
-    # Test function that contains division on zero
+    # Test invalid function that contains division on zero
     qtbot.keyClicks(gui.function_input, 'x + 21 ^ x / 0')
     qtbot.keyClicks(gui.xmin_input, '21')
     qtbot.keyClicks(gui.xmax_input, '39')
     qtbot.mouseClick(gui.plot_button, QtCore.Qt.LeftButton)
-    assert gui.statusBar().currentMessage() == ''
-    assert gui.canvas.figure.gca().has_data()
+    assert gui.statusBar().currentMessage() == 'Error: Zero Division Exists'
+    assert not gui.canvas.figure.gca().has_data()
     
 def test_complex_function(gui, qtbot):
     # Test complex function

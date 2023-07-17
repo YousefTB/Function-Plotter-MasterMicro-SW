@@ -102,6 +102,16 @@ class MainWindow(QMainWindow):
             y[y == np.inf] = np.nan
         except:
             pass
+        
+        # Avoid empty result of dividing on zero
+        try:
+            if len(y) == len(y[np.isnan(y)]):
+                self.canvas.figure.clear()
+                self.canvas.draw()
+                self.statusBar().showMessage('Error: Zero Division Exists')
+                return
+        except:
+            pass
 
         # Clear figure and plot
         self.canvas.figure.clear()
