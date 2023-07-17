@@ -4,11 +4,11 @@
 ## Table of Content
 You can use the table of the content to surf the documentation of the task
 
-- [Introduction](https://github.com/YousefTB/Function-Plotter-MasterMicro-SW/edit/main/README.md#introduction)
-- [Proposed Work](https://github.com/YousefTB/Function-Plotter-MasterMicro-SW/edit/main/README.md#proposed-work)
-- [Functionality](https://github.com/YousefTB/Function-Plotter-MasterMicro-SW/edit/main/README.md#functionality)
-- [Constraints](https://github.com/YousefTB/Function-Plotter-MasterMicro-SW/edit/main/README.md#constraints)
-- [Examples](https://github.com/YousefTB/Function-Plotter-MasterMicro-SW/edit/main/README.md#examples)
+- [Introduction](https://github.com/YousefTB/Function-Plotter-MasterMicro-SW/tree/main#introduction)
+- [Proposed Work](https://github.com/YousefTB/Function-Plotter-MasterMicro-SW/tree/main#proposed-work)
+- [Functionality](https://github.com/YousefTB/Function-Plotter-MasterMicro-SW/tree/main#functionality)
+- [Constraints](https://github.com/YousefTB/Function-Plotter-MasterMicro-SW/tree/main#constraints)
+- [Examples](https://github.com/YousefTB/Function-Plotter-MasterMicro-SW/tree/main#examples)
 
 ## Introduction
 This repo includes the Task required by **Master Micro** that is creating `Function Plotter` desktop application using Python with PySide2 package based on `Qt Framework` , so This repo is considered as the Deliverables of the Task
@@ -34,7 +34,7 @@ This repo includes the Task required by **Master Micro** that is creating `Funct
 > 9. The Matplotlib figure must be embedded in the Pyside2 application.
 
 
-***End of [Proposed Section](https://github.com/YousefTB/Function-Plotter-MasterMicro-SW/edit/main/README.md#proposed-work) Section***
+***End of [Proposed Work](https://github.com/YousefTB/Function-Plotter-MasterMicro-SW/tree/main#proposed-work) Section***
 
 ## Functionality
 The application consists of Input text to enter the function by user. **Note that** the only supported operands `+-/*^` only and with parenthesis as required in the task document, with an Input texts for the user to enter the Minimum and Maximum value of `x` to evaluate and plot with applying some constraints.
@@ -49,7 +49,7 @@ The `Plot` button whenever clicked the program takes the inputs entered into tex
 
 **Figure 3: `Plot` button to plot the function**
 
-***End of [Functionality](https://github.com/YousefTB/Function-Plotter-MasterMicro-SW/edit/main/README.md#functionality) Section***
+***End of [Functionality](https://github.com/YousefTB/Function-Plotter-MasterMicro-SW/tree/main#functionality) Section***
 
 ## Constraints
 There are some constraints on the inputs, such as **Other operands than `+-*/^` and parenthesis will not be allowed**, non-numeric values for x variable and the minimum value cannot be greater than or equal (since it is function plotter rather than point) to the maximum value.
@@ -61,6 +61,8 @@ All these constraints are handled with ***Showing an error message in the menuba
 ![image](https://github.com/YousefTB/Function-Plotter-MasterMicro-SW/assets/95775013/86d4e3e8-a54e-428e-9cb8-4b53364e241e)
 
 **Figure 4: Invalid function that have warned in the menu bar**
+
+***End of [Constraints](https://github.com/YousefTB/Function-Plotter-MasterMicro-SW/tree/main#constraints) Section***
 
 ## Examples
 
@@ -105,5 +107,7 @@ This section contains multiple examples and `snapshots` of the results as requir
 
 
 Note that there are more multiple testcases in `main_test.py`
+
+***End of [Examples](https://github.com/YousefTB/Function-Plotter-MasterMicro-SW/tree/main#examples) Section***
 
 # **End of the File**
